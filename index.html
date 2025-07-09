@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emma & Simon</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Quicksand&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="topbar">
+        <div class="title">Emma & Simon</div>
+        <nav class="tab-buttons">
+            <button class="tab-button active" data-tab="details">Bröllopet</button>
+            <button class="tab-button" data-tab="accom">Boende</button>
+            <button class="tab-button" data-tab="travel">Resa</button>
+            <button class="tab-button" data-tab="osa">OSA</button>
+        </nav>
+    </header>
+
+    <header>
+        <h1>Emma & Simon</h1>
+        <p>9 maj 2026</p>
+    </header>
+
+    <main>
+        <section id="details" class="tab-content active">
+            <h3>Vi gifter oss</h3>
+            <h2>Lördag den 9 maj 2026</h2>
+            <p>15.00 samlas vi för vigselcermoni i Herrestads kyrka. Kyrkan är belägen på Östgötaslätten mellan Borghamn och Vadstena.</p>
+            <p>17.00 skålar tillsamans för brudparet och minglar vid borghamns strand.</p>
+            <p>18.00 rör vi oss mot festlokalen på borghamns strand. Om du önskar ta till orda eller ton under middagen, kontakta våra TMs så att de har möjlighet att planera schemat för kvällen.</p>
+            <p>När middagen är slut möblerar vi om lokalen för fest, tårta och dans. Senare på kvällen finns det också möjlighet för bastu, badtunna och ett dopp i vättern för de som önskar.</p>
+
+            <h2>Kontakt</h2>
+            <h3>TMs</h3>
+            <p>Tostmaster 1 0703-123456</p>
+            <p>Tostmaster 2 0703-123456</p>
+            <h3>Brudparet</h3>
+            <p>För frågor kring bröllopet, kontakta oss som du finner lämpligt eller annars på samma mail som för osa, emmasimon@mailadress.com.</p>
+
+            <h2>Presenter</h2>
+            <p>Har du/ni något på lur som du gärna vill ge oss? Spännande - tänker vi då! </p>
+            <p>Känns det klurigt? Strunta i att klura, du är lika välkommen med eller utan present.</p>
+        </section>
+
+        <section id="accom" class="tab-content">
+            <h2>Location</h2>
+            <div class="map-container">
+                <iframe
+                    src="https://www.openstreetmap.org/export/embed.html?bbox=18.058%2C59.33%2C18.068%2C59.34&amp;layer=mapnik&amp;marker=59.335%2C18.063"
+                    width="100%" height="300" frameborder="0"></iframe>
+                <p><a href="https://www.openstreetmap.org/?mlat=59.335&mlon=18.063#map=15/59.335/18.063"
+                        target="_blank">View larger map</a></p>
+            </div>
+        </section>
+
+        <section id="travel" class="tab-content">
+            <h2>Resa</h2>
+            <p>Resa med bil / Resa kollektivt</p>
+        </section>
+
+        <section id="osa" class="tab-content">
+            <h2>OSA</h2>
+            <p>Meddela oss via mail till mail@mail.com senast den *datum* *månad* om du har möjlighet att komma.</p>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+    <footer>
+        <p>&copy; 2025 Emma & Simon Bröllop</p>
+    </footer>
+</body>
+
+</html>
