@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-family: 'Quicksand', sans-serif;
-    background-color: #fffafa;
+    background-color: #fcf6ed;
     /* very light peach */
     color: #2a3a2a;
     /* dark green text */
@@ -116,7 +116,7 @@ header.topbar {
 
 .image-text-block {
     display: flex;
-    align-items: flex-start;
+    align-items: last baseline;
     gap: 2rem;
     margin: 2rem 0;
     flex-wrap: wrap;
@@ -139,18 +139,17 @@ header.topbar {
 .image-row {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    /* optional: centers images in row */
     gap: 1rem;
-    /* space between images */
+    justify-content: center;
+    align-items: center;     /* Center vertically */
 }
 
 .image-row img {
-    flex: 1 1 200px;         /* ideal size */
+    flex-grow: 1;
+    flex-shrink: 1;
     min-width: 100px;
-    max-width: 400px;
     width: 100%;
-    height: auto;
+    max-width: 700px;
     /* allows wrapping with a minimum width */
     border-radius: 5px;
 }
