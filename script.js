@@ -12,3 +12,20 @@ document.querySelectorAll('.tab-button').forEach(button => {
     document.getElementById(tabId).classList.add('active');
   });
 });
+
+// Title overflow check
+function updateTitle() {
+  const title = document.querySelector('.title');
+  const topbar = document.querySelector('.topbar');
+
+  // Reset to short first
+  title.classList.remove('hidden');
+
+  // If the short text overflows, hide it
+  if (topbar.scrollWidth > topbar.clientWidth) {
+    title.classList.add('hidden');
+  }
+}
+
+window.addEventListener('resize', updateTitle);
+window.addEventListener('load', updateTitle);

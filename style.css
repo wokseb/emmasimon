@@ -65,15 +65,37 @@ header.topbar {
 
 .topbar .title {
     font-family: 'Playfair Display', serif;
-    font-size: 1.3rem;
     font-weight: normal;
+    white-space: nowrap;
+    min-width: 0
+}
+
+.title::after {
+  content: attr(data-short);
+  display: none;
+}
+
+@media (max-width: 500px) {
+  .title {
+    font-size: 0;
+  }
+  .title::after {
+    flex-wrap: nowrap;
+    display: inline;
+    font-size: 1rem;
+    font-weight: normal;
+  }
+  .title.hidden::after {
+    display: none; /* allow JS to hide short title too */
+  }
 }
 
 /* tab style */
 .tab-buttons {
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    flex: 1;
+    justify-content: flex-end;
+    min-width: 0
 }
 
 .tab-button {
